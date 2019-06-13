@@ -80,7 +80,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Image src={images.eich} margin="0px auto 40px" height="400px"/>
+            <Image src={images.eich} margin="0px auto 40px" height="400px" />
             <Heading size={2} caps textColor="primary" textFont="primary">
               Brendan Eich
             </Heading>
@@ -90,7 +90,9 @@ export default class Presentation extends React.Component {
             <BlockQuote>
               <Quote>2011, 38.2% of sites use JavaScript</Quote>
               <Cite>
-                <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">W3Techs</Link>
+                <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">
+                  W3Techs
+                </Link>
               </Cite>
             </BlockQuote>
           </Slide>
@@ -99,7 +101,9 @@ export default class Presentation extends React.Component {
             <BlockQuote>
               <Quote>2019 - 75.9% of sites use JavaScript</Quote>
               <Cite>
-                <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">W3Techs</Link>
+                <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">
+                  W3Techs
+                </Link>
               </Cite>
             </BlockQuote>
           </Slide>
@@ -109,11 +113,17 @@ export default class Presentation extends React.Component {
               Google Trends
             </Heading>
             <Layout>
-              <Image src={images.googleTrends} padding="20px" style={{objectFit: "contain", width: "100%"}} />
+              <Image
+                src={images.googleTrends}
+                padding="20px"
+                style={{ objectFit: "contain", width: "100%" }}
+              />
             </Layout>
             <Layout>
               <Text>
-                <Link href="https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=%2Fm%2F012l1vxv,%2Fg%2F11c6w0ddw9,%2Fm%2F02p97,%2Fg%2F11c0vmgx5d,%2Fm%2F0gx25dn">Google Trends (fetched 13th of June, 2019)</Link>
+                <Link href="https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=%2Fm%2F012l1vxv,%2Fg%2F11c6w0ddw9,%2Fm%2F02p97,%2Fg%2F11c0vmgx5d,%2Fm%2F0gx25dn">
+                  Google Trends (fetched 13th of June, 2019)
+                </Link>
               </Text>
             </Layout>
           </Slide>
@@ -127,55 +137,85 @@ export default class Presentation extends React.Component {
             </Layout>
             <Layout>
               <Text>
-                <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
+                <Link href="http://www.modulecounts.com/">
+                  modulecounts.com
+                </Link>
               </Text>
             </Layout>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.npmShape} align="flex-end flex-end">
+          <Slide
+            transition={slideTransition}
+            bgImage={images.npmShape}
+            align="flex-end flex-end"
+          >
             <Layout>
               <Text>
-                <Link href="https://anvaka.github.io/allnpmviz3d/">allnpmviz3d by @anvaka</Link>
+                <Link href="https://anvaka.github.io/allnpmviz3d/">
+                  allnpmviz3d by @anvaka
+                </Link>
               </Text>
             </Layout>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Image src={images.unique} margin="0px auto 40px" width="100%"/>
+            <Image src={images.unique} margin="0px auto 40px" width="100%" />
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Image src={images.dinosaurs} margin="0px auto 40px" width="100%"/>
+            <Image src={images.dinosaurs} margin="0px auto 40px" width="100%" />
             <Heading size={2} fit textColor="primary" textFont="primary">
               Packages of all shapes and sizes
             </Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.jumper} bgDarken={0.75} bgColor="black">
+          <Slide
+            transition={slideTransition}
+            bgImage={images.jumper}
+            bgDarken={0.75}
+            bgColor="black"
+          >
             <BlockQuote>
               <Quote>5146 results for ‘boilerplate’</Quote>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.shapeSorter} bgDarken={0.75} bgColor="black">
+          <Slide
+            transition={slideTransition}
+            bgImage={images.shapeSorter}
+            bgDarken={0.75}
+            bgColor="black"
+          >
             <BlockQuote>
               <Quote>23592 results for ‘framework’</Quote>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.tools} bgDarken={0.75}>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.tools}
+            bgDarken={0.75}
+          >
             <BlockQuote>
               <Quote>2878 results for ‘toolkit’</Quote>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.legos} bgDarken={0.75}>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.legos}
+            bgDarken={0.75}
+          >
             <BlockQuote>
               <Quote>51697 results for ‘library’</Quote>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.components} bgDarken={0.75}>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.components}
+            bgDarken={0.75}
+          >
             <BlockQuote>
               <Quote>74119 results for ‘component’</Quote>
             </BlockQuote>
@@ -183,69 +223,116 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="black">
             <BlockQuote>
-              <Quote>How many of these packages can be considered mature?</Quote>
+              <Quote>
+                How many of these packages can be considered mature?
+              </Quote>
             </BlockQuote>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
             <BlockQuote>
-              <Quote>Based on Futurice, about one third (2014). Maybe less now?</Quote>
+              <Quote>
+                Based on Futurice, about one third (2014). Maybe less now?
+              </Quote>
               <Cite>
-                <Link href="https://www.futurice.com/blog/npm-registry-in-numbers/">Futurice</Link>
+                <Link href="https://www.futurice.com/blog/npm-registry-in-numbers/">
+                  Futurice
+                </Link>
               </Cite>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.troll}
+            bgDarken={0.85}
+          >
             <Heading size={1} caps fit textColor="primary">
               FUD for Thought
             </Heading>
             <List textColor="primary">
-              <Appear><ListItem>Instead of collaborating, we rather do our own thing?</ListItem></Appear>
-              <Appear><ListItem>Have we reached peak boilerplate?</ListItem></Appear>
-              <Appear><ListItem>Lifetime of packages keeps decreasing?</ListItem></Appear>
-              <Appear><ListItem>How many of the packages can be considered sustainable (no bus factor of one)?</ListItem></Appear>
-              <Appear><ListItem>The need for standardization and common ground</ListItem></Appear>
+              <Appear>
+                <ListItem>
+                  Instead of collaborating, we rather do our own thing?
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>Have we reached peak boilerplate?</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>Lifetime of packages keeps decreasing?</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  How many of the packages can be considered sustainable (no bus
+                  factor of one)?
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  The need for standardization and common ground
+                </ListItem>
+              </Appear>
             </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
             <BlockQuote>
               <Quote>49% of 126k packages have tests</Quote>
-              <Cite>
-                NodeChecker (defunct, 2016)
-              </Cite>
+              <Cite>NodeChecker (defunct, 2016)</Cite>
             </BlockQuote>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
             <BlockQuote>
-              <Quote>138k packages out of 231k have readme, license, and repository data</Quote>
+              <Quote>
+                138k packages out of 231k have readme, license, and repository
+                data
+              </Quote>
               <Cite>@scriptjs, 2016</Cite>
             </BlockQuote>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
             <BlockQuote>
-              <Quote>106k packages out of these 138k have seen action within a year</Quote>
+              <Quote>
+                106k packages out of these 138k have seen action within a year
+              </Quote>
               <Cite>@scriptjs, 2016</Cite>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.troll}
+            bgDarken={0.85}
+          >
             <Heading size={1} caps fit textColor="primary">
               FUD for Thought
             </Heading>
             <List textColor="primary">
-              <Appear><ListItem>Around 100-300k packages worth using?</ListItem></Appear>
-              <Appear><ListItem>Quantity over quality?</ListItem></Appear>
-              <Appear><ListItem>Too easy to publish?</ListItem></Appear>
-              <Appear><ListItem>
-                Node Security Project (bought by npm) - Where is Node Quality Project?
-              </ListItem></Appear>
-              <Appear><ListItem>
-                <Link href="https://github.com/nodejs/node/issues/3959">Potential licensing issues with Node</Link>
-              </ListItem></Appear>
+              <Appear>
+                <ListItem>Around 100-300k packages worth using?</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>Quantity over quality?</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>Too easy to publish?</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  Node Security Project (bought by npm) - Where is Node Quality
+                  Project?
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  <Link href="https://github.com/nodejs/node/issues/3959">
+                    Potential licensing issues with Node
+                  </Link>
+                </ListItem>
+              </Appear>
             </List>
           </Slide>
 
@@ -253,7 +340,11 @@ export default class Presentation extends React.Component {
             <Heading fit size={2} textColor="tertiary">
               Single point of failure managed by a single company
             </Heading>
-            <Image src={images.guruMeditation} margin="40px auto 40px" height="219px"/>
+            <Image
+              src={images.guruMeditation}
+              margin="40px auto 40px"
+              height="219px"
+            />
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
@@ -261,36 +352,88 @@ export default class Presentation extends React.Component {
               Upcoming Alternative Registries
             </Heading>
             <List textColor="primary">
-              <Appear><ListItem>Mirrors by <Link href="http://cnpmjs.org/">cnpm</Link> and <Link href="https://open-registry.dev">Open-Registry</Link></ListItem></Appear>
-              <Appear><ListItem><Link href="https://about.gitlab.com/2019/05/10/github-adds-package-registry/">GitLab Package Registry</Link></ListItem></Appear>
-              <Appear><ListItem><Link href="https://github.com/features/package-registry">GitHub Package Registry</Link></ListItem></Appear>
-              <Appear><ListItem><Link href="https://github.com/entropic-dev/entropic">Entropic</Link></ListItem></Appear>
+              <Appear>
+                <ListItem>
+                  Mirrors by <Link href="http://cnpmjs.org/">cnpm</Link> and{" "}
+                  <Link href="https://open-registry.dev">Open-Registry</Link>
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  <Link href="https://about.gitlab.com/2019/05/10/github-adds-package-registry/">
+                    GitLab Package Registry
+                  </Link>
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  <Link href="https://github.com/features/package-registry">
+                    GitHub Package Registry
+                  </Link>
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  <Link href="https://github.com/entropic-dev/entropic">
+                    Entropic
+                  </Link>
+                </ListItem>
+              </Appear>
             </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
             <BlockQuote>
-              <Quote>{"Communities are constrained to produce designs which are copies of the communication structures of these communities"}</Quote>
+              <Quote>
+                {
+                  "Communities are constrained to produce designs which are copies of the communication structures of these communities"
+                }
+              </Quote>
               <Cite>Melvin Conway (adapted)</Cite>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.babel} bgDarken={0.75} bgColor="tertiary" textColor="primary">
+          <Slide
+            transition={slideTransition}
+            bgImage={images.babel}
+            bgDarken={0.75}
+            bgColor="tertiary"
+            textColor="primary"
+          >
             <Heading caps fit size={1} textColor="primary">
               ECMAScript
             </Heading>
             <List textColor="primary">
-              <Appear><ListItem>ES5 - 2009</ListItem></Appear>
-              <Appear><ListItem>ES6/ES2015 - 20+ new features</ListItem></Appear>
-              <Appear><ListItem>ES7/ES2016 - Array.prototype.includes, **</ListItem></Appear>
-              <Appear><ListItem>ES7/ES2017-ES2019 - Too many features to mention</ListItem></Appear>
-              <Appear><ListItem>
-                <Link href="https://github.com/tc39/ecma262">Current proposals</Link>
-              </ListItem></Appear>
+              <Appear>
+                <ListItem>ES5 - 2009</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>ES6/ES2015 - 20+ new features</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>ES7/ES2016 - Array.prototype.includes, **</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  ES7/ES2017-ES2019 - Too many features to mention
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  <Link href="https://github.com/tc39/ecma262">
+                    Current proposals
+                  </Link>
+                </ListItem>
+              </Appear>
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.cowboy} bgDarken={0.75} bgColor="black">
+          <Slide
+            transition={slideTransition}
+            bgImage={images.cowboy}
+            bgDarken={0.75}
+            bgColor="black"
+          >
             <BlockQuote>
               <Quote>{"Array(16).join('hero' - 1) + 'Batman';"}</Quote>
             </BlockQuote>
@@ -308,7 +451,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-          <Heading fit size={2} textColor="tertiary">
+            <Heading fit size={2} textColor="tertiary">
               Language popularity in 2019
             </Heading>
             <Layout>
@@ -319,51 +462,93 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Image src={images.enterprise} margin="0px auto 40px" height="400px"/>
-            <Heading fit size={2}textColor="primary" textFont="primary">
+            <Image
+              src={images.enterprise}
+              margin="0px auto 40px"
+              height="400px"
+            />
+            <Heading fit size={2} textColor="primary" textFont="primary">
               JavaScript went Enterprise
             </Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.flow} bgDarken={0.25}>
-            <Heading size={1}>
-              Flow
-            </Heading>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.flow}
+            bgDarken={0.25}
+          >
+            <Heading size={1}>Flow</Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.types} bgDarken={0.25}>
-            <Heading size={1}>
-              TypeScript
-            </Heading>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.types}
+            bgDarken={0.25}
+          >
+            <Heading size={1}>TypeScript</Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.assembly} bgDarken={0.25}>
-            <Heading size={1}>
-              WebAssembly
-            </Heading>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.assembly}
+            bgDarken={0.25}
+          >
+            <Heading size={1}>WebAssembly</Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.troll}
+            bgDarken={0.85}
+          >
             <Heading size={1} caps fit textColor="primary">
               FUD for Thought
             </Heading>
             <List textColor="primary">
-              <Appear><ListItem>Transpiling leads to fragmentation?</ListItem></Appear>
-              <Appear><ListItem>Enterprise interests vs. community interests</ListItem></Appear>
-              <Appear><ListItem>Hype driven, backed by big companies, juxtaposing</ListItem></Appear>
-              <Appear><ListItem>The need for standardization and common ground</ListItem></Appear>
+              <Appear>
+                <ListItem>Transpiling leads to fragmentation?</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  Enterprise interests vs. community interests
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  Hype driven, backed by big companies, juxtaposing
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  The need for standardization and common ground
+                </ListItem>
+              </Appear>
             </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
             <BlockQuote>
-              <Quote>{"The future is already here — it's just not very evenly distributed"}</Quote>
+              <Quote>
+                {
+                  "The future is already here — it's just not very evenly distributed"
+                }
+              </Quote>
               <Cite>William Gibson</Cite>
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.tools} bgDarken={0.25}>
-            <iframe width="840" height="630" src="https://www.youtube.com/embed/Y7XW-mewUm8" frameborder="0" allowfullscreen></iframe>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.tools}
+            bgDarken={0.25}
+          >
+            <iframe
+              width="840"
+              height="630"
+              src="https://www.youtube.com/embed/Y7XW-mewUm8"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="tertiary">
@@ -377,7 +562,11 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
+          <Slide
+            transition={slideTransition}
+            bgImage={images.troll}
+            bgDarken={0.85}
+          >
             <Heading caps fit size={1} textColor="tertiary">
               Questions?
             </Heading>
