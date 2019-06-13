@@ -36,6 +36,7 @@ const images = {
   assembly: require("../assets/assembly.jpg").replace("/", ""),
   babel: require("../assets/babel.jpg").replace("/", ""),
   city: require("../assets/city.jpg").replace("/", ""),
+  googleTrends: require("../assets/google-trends.png").replace("/", ""),
   components: require("../assets/components.jpg").replace("/", ""),
   cowboy: require("../assets/cowboy.jpg").replace("/", ""),
   dinosaurs: require("../assets/dinosaurs.png").replace("/", ""),
@@ -104,31 +105,15 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Layout>
-              <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
-                <Image src={images.redmonk2015} />
-              </Link>
-            </Layout>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary">
-            <Layout>
-              <Link href="https://redmonk.com/sogrady/2019/03/20/language-rankings-1-19/">
-                <Image src={images.redmonk2019} />
-              </Link>
-            </Layout>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary">
             <Heading size={1} textColor="tertiary">
-              Job Trends
+              Google Trends
             </Heading>
             <Layout>
-              <Image src={images.jobs} padding="20px" />
+              <Image src={images.googleTrends} padding="20px" style={{objectFit: "contain", width: "100%"}} />
             </Layout>
             <Layout>
               <Text>
-                <Link href="http://www.indeed.com/jobtrends?q=Angularjs%2C+React.js%2C+Knockout%2C+Backbone.js&l=">Indeed</Link>
+                <Link href="https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=%2Fm%2F012l1vxv,%2Fg%2F11c6w0ddw9,%2Fm%2F02p97,%2Fg%2F11c0vmgx5d,%2Fm%2F0gx25dn">Google Trends (fetched 13th of June, 2019)</Link>
               </Text>
             </Layout>
           </Slide>
@@ -161,7 +146,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="black">
             <Image src={images.dinosaurs} margin="0px auto 40px" width="100%"/>
-            <Heading size={2} caps textColor="primary" textFont="primary">
+            <Heading size={2} fit textColor="primary" textFont="primary">
               Packages of all shapes and sizes
             </Heading>
           </Slide>
@@ -261,12 +246,14 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>
                 <Link href="https://github.com/nodejs/node/issues/3959">Potential licensing issues with Node</Link>
               </ListItem></Appear>
-              <Appear><ListItem>Single point of failure managed by a single company</ListItem></Appear>
             </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Image src={images.guruMeditation} margin="0px auto 40px" height="219px"/>
+            <Heading fit size={2} textColor="tertiary">
+              Single point of failure managed by a single company
+            </Heading>
+            <Image src={images.guruMeditation} margin="40px auto 40px" height="219px"/>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
@@ -309,27 +296,49 @@ export default class Presentation extends React.Component {
             </BlockQuote>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading fit size={2} textColor="tertiary">
+              Language popularity in 2015
+            </Heading>
+            <Layout>
+              <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
+                <Image src={images.redmonk2015} padding="20px" />
+              </Link>
+            </Layout>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+          <Heading fit size={2} textColor="tertiary">
+              Language popularity in 2019
+            </Heading>
+            <Layout>
+              <Link href="https://redmonk.com/sogrady/2019/03/20/language-rankings-1-19/">
+                <Image src={images.redmonk2019} padding="20px" />
+              </Link>
+            </Layout>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="black">
             <Image src={images.enterprise} margin="0px auto 40px" height="400px"/>
-            <Heading size={2} caps textColor="primary" textFont="primary">
-              JavaScript Goes Enterprise
+            <Heading fit size={2}textColor="primary" textFont="primary">
+              JavaScript went Enterprise
             </Heading>
           </Slide>
 
           <Slide transition={slideTransition} bgImage={images.flow} bgDarken={0.25}>
-            <Heading size={1} caps>
-              Flowtype
+            <Heading size={1}>
+              Flow
             </Heading>
           </Slide>
 
           <Slide transition={slideTransition} bgImage={images.types} bgDarken={0.25}>
-            <Heading size={1} caps>
+            <Heading size={1}>
               TypeScript
             </Heading>
           </Slide>
 
           <Slide transition={slideTransition} bgImage={images.assembly} bgDarken={0.25}>
-            <Heading size={1} caps>
+            <Heading size={1}>
               WebAssembly
             </Heading>
           </Slide>
