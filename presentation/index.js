@@ -320,7 +320,7 @@ export default class Presentation extends React.Component {
               <Appear>
                 <ListItem>
                   There used to be a Node Security Project (bought by npm, now{" "}
-                  <code>npm audit</code>, where is Node Quality Project?)
+                  <code>npm audit</code>), where is Node Quality Project?
                 </ListItem>
               </Appear>
               <Appear>
