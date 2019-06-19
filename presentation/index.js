@@ -244,7 +244,7 @@ export default class Presentation extends React.Component {
             bgDarken={0.85}
           >
             <Heading size={1} fit textColor="primary">
-              FUD for Thought
+              FUD for thought
             </Heading>
             <List textColor="primary">
               <Appear>
@@ -306,7 +306,7 @@ export default class Presentation extends React.Component {
             bgDarken={0.85}
           >
             <Heading size={1} fit textColor="primary">
-              FUD for Thought
+              FUD for thought
             </Heading>
             <List textColor="primary">
               <Appear>
@@ -506,7 +506,7 @@ export default class Presentation extends React.Component {
             bgDarken={0.85}
           >
             <Heading size={1} fit textColor="primary">
-              FUD for Thought
+              FUD for thought
             </Heading>
             <List textColor="primary">
               <Appear>
