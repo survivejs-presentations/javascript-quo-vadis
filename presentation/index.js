@@ -159,10 +159,6 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Image src={images.unique} margin="0px auto 40px" width="100%" />
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="black">
             <Image src={images.dinosaurs} margin="0px auto 40px" width="100%" />
             <Heading size={2} fit textColor="primary" textFont="primary">
               Packages of all shapes and sizes
@@ -247,20 +243,22 @@ export default class Presentation extends React.Component {
             bgImage={images.troll}
             bgDarken={0.85}
           >
-            <Heading size={1} caps fit textColor="primary">
+            <Heading size={1} fit textColor="primary">
               FUD for Thought
             </Heading>
             <List textColor="primary">
               <Appear>
                 <ListItem>
-                  Instead of collaborating, we rather do our own thing?
+                  Instead of collaborating, do we rather do our own thing?
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>Have we reached peak boilerplate?</ListItem>
               </Appear>
               <Appear>
-                <ListItem>Lifetime of packages keeps decreasing?</ListItem>
+                <ListItem>
+                  Does the lifetime of packages keep decreasing?
+                </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
@@ -270,7 +268,7 @@ export default class Presentation extends React.Component {
               </Appear>
               <Appear>
                 <ListItem>
-                  The need for standardization and common ground
+                  Do we need better standards or standard libraries?
                 </ListItem>
               </Appear>
             </List>
@@ -307,29 +305,28 @@ export default class Presentation extends React.Component {
             bgImage={images.troll}
             bgDarken={0.85}
           >
-            <Heading size={1} caps fit textColor="primary">
+            <Heading size={1} fit textColor="primary">
               FUD for Thought
             </Heading>
             <List textColor="primary">
               <Appear>
-                <ListItem>Around 100-300k packages worth using?</ListItem>
+                <ListItem>
+                  How many of the million packages are worth using?
+                </ListItem>
               </Appear>
               <Appear>
-                <ListItem>Quantity over quality?</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Too easy to publish?</ListItem>
+                <ListItem>Did we go quantity over quality?</ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Node Security Project (bought by npm) - Where is Node Quality
-                  Project?
+                  There used to be a Node Security Project (bought by npm, now{" "}
+                  <code>npm audit</code>, where is Node Quality Project?)
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
                   <Link href="https://github.com/nodejs/node/issues/3959">
-                    Potential licensing issues with Node
+                    There are potential, unresolved licensing issues with Node
                   </Link>
                 </ListItem>
               </Appear>
@@ -337,8 +334,15 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Heading fit size={2} textColor="tertiary">
-              Single point of failure managed by a single company
+            <Heading fit size={1} textColor="primary">
+              Is it too easy to publish?
+            </Heading>
+            <Image src={images.unique} margin="0px auto 40px" width="100%" />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="black">
+            <Heading fit size={1} textColor="primary">
+              Do we have a single point of failure?
             </Heading>
             <Image
               src={images.guruMeditation}
@@ -348,8 +352,8 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
-            <Heading size={1} caps fit textColor="primary">
-              Upcoming Alternative Registries
+            <Heading size={1} fit textColor="primary">
+              Maybe not anymore
             </Heading>
             <List textColor="primary">
               <Appear>
@@ -382,17 +386,6 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="black">
-            <BlockQuote>
-              <Quote>
-                {
-                  "Communities are constrained to produce designs which are copies of the communication structures of these communities"
-                }
-              </Quote>
-              <Cite>Melvin Conway (adapted)</Cite>
-            </BlockQuote>
-          </Slide>
-
           <Slide
             transition={slideTransition}
             bgImage={images.babel}
@@ -400,7 +393,7 @@ export default class Presentation extends React.Component {
             bgColor="tertiary"
             textColor="primary"
           >
-            <Heading caps fit size={1} textColor="primary">
+            <Heading fit size={1} textColor="primary">
               ECMAScript
             </Heading>
             <List textColor="primary">
@@ -439,28 +432,6 @@ export default class Presentation extends React.Component {
             </BlockQuote>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading fit size={2} textColor="tertiary">
-              Language popularity in 2015
-            </Heading>
-            <Layout>
-              <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
-                <Image src={images.redmonk2015} padding="20px" />
-              </Link>
-            </Layout>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading fit size={2} textColor="tertiary">
-              Language popularity in 2019
-            </Heading>
-            <Layout>
-              <Link href="https://redmonk.com/sogrady/2019/03/20/language-rankings-1-19/">
-                <Image src={images.redmonk2019} padding="20px" />
-              </Link>
-            </Layout>
-          </Slide>
-
           <Slide transition={slideTransition} bgColor="black">
             <Image
               src={images.enterprise}
@@ -488,6 +459,28 @@ export default class Presentation extends React.Component {
             <Heading size={1}>TypeScript</Heading>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading fit size={2} textColor="tertiary">
+              Language popularity in 2015
+            </Heading>
+            <Layout>
+              <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
+                <Image src={images.redmonk2015} padding="20px" />
+              </Link>
+            </Layout>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading fit size={2} textColor="tertiary">
+              Language popularity in 2019
+            </Heading>
+            <Layout>
+              <Link href="https://redmonk.com/sogrady/2019/03/20/language-rankings-1-19/">
+                <Image src={images.redmonk2019} padding="20px" />
+              </Link>
+            </Layout>
+          </Slide>
+
           <Slide
             transition={slideTransition}
             bgImage={images.assembly}
@@ -501,26 +494,27 @@ export default class Presentation extends React.Component {
             bgImage={images.troll}
             bgDarken={0.85}
           >
-            <Heading size={1} caps fit textColor="primary">
+            <Heading size={1} fit textColor="primary">
               FUD for Thought
             </Heading>
             <List textColor="primary">
               <Appear>
-                <ListItem>Transpiling leads to fragmentation?</ListItem>
+                <ListItem>Does transpiling lead to fragmentation?</ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Enterprise interests vs. community interests
+                  Do we have enterprise interests against community interests?
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Hype driven, backed by big companies, juxtaposing
+                  Is it possible development is hype driven, backed by big
+                  companies while juxtaposing solutions against each other?
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  The need for standardization and common ground
+                  Will TypeScript encounter the fate of CoffeeScript?
                 </ListItem>
               </Appear>
             </List>
@@ -567,13 +561,13 @@ export default class Presentation extends React.Component {
             bgImage={images.troll}
             bgDarken={0.85}
           >
-            <Heading caps fit size={1} textColor="tertiary">
+            <Heading fit size={1} textColor="tertiary">
               Questions?
             </Heading>
           </Slide>
 
           <Slide transition={slideTransition} textColor="primary">
-            <Heading caps fit size={1} textColor="secondary">
+            <Heading fit size={1} textColor="secondary">
               Image Credits
             </Heading>
             <Markdown>
