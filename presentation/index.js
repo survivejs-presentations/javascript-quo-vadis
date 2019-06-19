@@ -383,6 +383,11 @@ export default class Presentation extends React.Component {
                   </Link>
                 </ListItem>
               </Appear>
+              <Appear>
+                <ListItem>
+                  <Link href="https://verdaccio.org">Verdaccio</Link>
+                </ListItem>
+              </Appear>
             </List>
           </Slide>
 
