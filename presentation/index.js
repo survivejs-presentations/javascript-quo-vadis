@@ -388,6 +388,12 @@ export default class Presentation extends React.Component {
                   <Link href="https://verdaccio.org">Verdaccio</Link>
                 </ListItem>
               </Appear>
+              <Appear>
+                <ListItem>
+                  <Link href="https://www.npmjs.com/package/nrm">nrm</Link> -
+                  npm registry manager
+                </ListItem>
+              </Appear>
             </List>
           </Slide>
 
