@@ -81,7 +81,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="black">
             <Image src={images.eich} margin="0px auto 40px" height="400px" />
-            <Heading size={2} caps textColor="primary" textFont="primary">
+            <Heading size={2} textColor="primary" textFont="primary">
               Brendan Eich
             </Heading>
           </Slide>
@@ -133,7 +133,11 @@ export default class Presentation extends React.Component {
               Module Counts
             </Heading>
             <Layout>
-              <Image src={images.moduleCounts} padding="20px" />
+              <Image
+                src={images.moduleCounts}
+                padding="20px"
+                style={{ objectFit: "contain", width: "100%" }}
+              />
             </Layout>
             <Layout>
               <Text>
@@ -222,19 +226,6 @@ export default class Presentation extends React.Component {
               <Quote>
                 How many of these packages can be considered mature?
               </Quote>
-            </BlockQuote>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="black">
-            <BlockQuote>
-              <Quote>
-                Based on Futurice, about one third (2014). Maybe less now?
-              </Quote>
-              <Cite>
-                <Link href="https://www.futurice.com/blog/npm-registry-in-numbers/">
-                  Futurice
-                </Link>
-              </Cite>
             </BlockQuote>
           </Slide>
 
