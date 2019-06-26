@@ -176,7 +176,18 @@ export default class Presentation extends React.Component {
             bgColor="black"
           >
             <BlockQuote>
-              <Quote>5146 results for ‘boilerplate’</Quote>
+              <Quote>2016 - 2669 results for ‘boilerplate’</Quote>
+            </BlockQuote>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
+            bgImage={images.jumper}
+            bgDarken={0.75}
+            bgColor="black"
+          >
+            <BlockQuote>
+              <Quote>2019 - 5242 results for ‘boilerplate’</Quote>
             </BlockQuote>
           </Slide>
 
@@ -187,7 +198,18 @@ export default class Presentation extends React.Component {
             bgColor="black"
           >
             <BlockQuote>
-              <Quote>23592 results for ‘framework’</Quote>
+              <Quote>2016 - 12263 results for ‘framework’</Quote>
+            </BlockQuote>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
+            bgImage={images.shapeSorter}
+            bgDarken={0.75}
+            bgColor="black"
+          >
+            <BlockQuote>
+              <Quote>2019 - 23975 results for ‘framework’</Quote>
             </BlockQuote>
           </Slide>
 
@@ -197,7 +219,17 @@ export default class Presentation extends React.Component {
             bgDarken={0.75}
           >
             <BlockQuote>
-              <Quote>2878 results for ‘toolkit’</Quote>
+              <Quote>2016 - 1067 results for ‘toolkit’</Quote>
+            </BlockQuote>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
+            bgImage={images.tools}
+            bgDarken={0.75}
+          >
+            <BlockQuote>
+              <Quote>2019 - 2938 results for ‘toolkit’</Quote>
             </BlockQuote>
           </Slide>
 
@@ -207,7 +239,17 @@ export default class Presentation extends React.Component {
             bgDarken={0.75}
           >
             <BlockQuote>
-              <Quote>51697 results for ‘library’</Quote>
+              <Quote>2016 - 30187 results for ‘library’</Quote>
+            </BlockQuote>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
+            bgImage={images.legos}
+            bgDarken={0.75}
+          >
+            <BlockQuote>
+              <Quote>2019 - 51909 results for ‘library’</Quote>
             </BlockQuote>
           </Slide>
 
@@ -217,7 +259,17 @@ export default class Presentation extends React.Component {
             bgDarken={0.75}
           >
             <BlockQuote>
-              <Quote>74119 results for ‘component’</Quote>
+              <Quote>2016 - 13711 results for ‘component’</Quote>
+            </BlockQuote>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
+            bgImage={images.components}
+            bgDarken={0.75}
+          >
+            <BlockQuote>
+              <Quote>2019 - 76000 results for ‘component’</Quote>
             </BlockQuote>
           </Slide>
 
@@ -227,42 +279,6 @@ export default class Presentation extends React.Component {
                 How many of these packages can be considered mature?
               </Quote>
             </BlockQuote>
-          </Slide>
-
-          <Slide
-            transition={slideTransition}
-            bgImage={images.troll}
-            bgDarken={0.85}
-          >
-            <Heading size={1} fit textColor="primary">
-              FUD for thought
-            </Heading>
-            <List textColor="primary">
-              <Appear>
-                <ListItem>
-                  Instead of collaborating, do we rather do our own thing?
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Have we reached peak boilerplate?</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  Does the lifetime of packages keep decreasing?
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  How many of the packages can be considered sustainable (no bus
-                  factor of one)?
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  Do we need better standards or standard libraries?
-                </ListItem>
-              </Appear>
-            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
@@ -276,7 +292,7 @@ export default class Presentation extends React.Component {
             <BlockQuote>
               <Quote>
                 138k packages out of 231k have readme, license, and repository
-                data
+                data (currently 720k out of 995k)
               </Quote>
               <Cite>@scriptjs, 2016</Cite>
             </BlockQuote>
@@ -314,13 +330,6 @@ export default class Presentation extends React.Component {
                   <code>npm audit</code>), where is Node Quality Project?
                 </ListItem>
               </Appear>
-              <Appear>
-                <ListItem>
-                  <Link href="https://github.com/nodejs/node/issues/3959">
-                    There are potential, unresolved licensing issues with Node
-                  </Link>
-                </ListItem>
-              </Appear>
             </List>
           </Slide>
 
@@ -329,6 +338,28 @@ export default class Presentation extends React.Component {
               Is it too easy to publish?
             </Heading>
             <Image src={images.unique} margin="0px auto 40px" width="100%" />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="black">
+            <BlockQuote>
+              <Quote>left-pad</Quote>
+              <Cite>
+                <Link href="https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/">
+                  The Register
+                </Link>
+              </Cite>
+            </BlockQuote>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="black">
+            <BlockQuote>
+              <Quote>Cryptostealer</Quote>
+              <Cite>
+                <Link href="https://www.theregister.co.uk/2018/11/26/npm_repo_bitcoin_stealer/">
+                  The Register
+                </Link>
+              </Cite>
+            </BlockQuote>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
@@ -390,6 +421,20 @@ export default class Presentation extends React.Component {
 
           <Slide
             transition={slideTransition}
+            bgImage={images.tools}
+            bgDarken={0.25}
+          >
+            <iframe
+              width="840"
+              height="630"
+              src="https://www.pika.dev"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
             bgImage={images.babel}
             bgDarken={0.75}
             bgColor="tertiary"
@@ -432,6 +477,20 @@ export default class Presentation extends React.Component {
             <BlockQuote>
               <Quote>{"Array(16).join('hero' - 1) + 'Batman';"}</Quote>
             </BlockQuote>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
+            bgImage={images.tools}
+            bgDarken={0.25}
+          >
+            <iframe
+              width="840"
+              height="630"
+              src="https://eqeq.js.org"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
@@ -542,8 +601,8 @@ export default class Presentation extends React.Component {
               width="840"
               height="630"
               src="https://www.youtube.com/embed/Y7XW-mewUm8"
-              frameborder="0"
-              allowfullscreen
+              frameBorder="0"
+              allowFullScreen
             ></iframe>
           </Slide>
 
