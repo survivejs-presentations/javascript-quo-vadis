@@ -435,6 +435,20 @@ export default class Presentation extends React.Component {
 
           <Slide
             transition={slideTransition}
+            bgImage={images.tools}
+            bgDarken={0.25}
+          >
+            <iframe
+              width="840"
+              height="630"
+              src="https://www.pika.dev/about/stats"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </Slide>
+
+          <Slide
+            transition={slideTransition}
             bgImage={images.babel}
             bgDarken={0.75}
             bgColor="tertiary"
