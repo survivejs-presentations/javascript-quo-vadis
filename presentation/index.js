@@ -374,8 +374,22 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
+            <BlockQuote>
+              <Quote>
+                The CEO of npm told employees that it’s secured a deal that
+                removes ‘the threat of running out of money’ until early 2020
+              </Quote>
+              <Cite>
+                <Link href="https://www.businessinsider.com/npm-ceo-bryan-bogensberger-funding-2019-6?IR=T">
+                  Business Insider
+                </Link>
+              </Cite>
+            </BlockQuote>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="black">
             <Heading size={1} fit textColor="primary">
-              Maybe not anymore
+              Maybe there are options
             </Heading>
             <List textColor="primary">
               <Appear>
@@ -505,6 +519,7 @@ export default class Presentation extends React.Component {
               frameBorder="0"
               allowFullScreen
             ></iframe>
+            <Link href="https://eqeq.js.org">eqeq.js.org</Link>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black">
@@ -590,6 +605,11 @@ export default class Presentation extends React.Component {
               <Appear>
                 <ListItem>
                   Will TypeScript encounter the fate of CoffeeScript?
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  Are there better ways to type? (Spoiler: ReasonML)
                 </ListItem>
               </Appear>
             </List>
